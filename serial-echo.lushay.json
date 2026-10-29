@@ -1,0 +1,23 @@
+{
+  "name": "serial-echo",
+  "board": "tangnano20k",
+  "top": "top",
+  "includedFiles": [
+    "rtl/uart.v",
+    "rtl/byte_fifo.v",
+    "rtl/uart_stream.v",
+    "rtl/echo_service.v",
+    "rtl/serial_status_leds.v",
+    "rtl/top.v"
+  ],
+  "constraintsFile": "tangnano20k.cst",
+  "programMode": "ram",
+  "testBenches": [
+    "sim/echo_tb.sv",
+    "sim/core_tb.sv",
+    "sim/service_tb.sv",
+    "sim/fifo_tb.sv",
+    "sim/leds_tb.sv"
+  ],
+  "skipCstChecking": false
+}
